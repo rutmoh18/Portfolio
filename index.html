@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritik Mohadikar | AWS Cloud Engineer</title>
+  <meta name="description"
+    content="AWS Cloud Engineer with 4.5+ years experience in DevOps, cloud infrastructure, and automation" />
+  <meta name="keywords" content="AWS, Cloud Engineer, DevOps, Terraform, Docker, Kubernetes, Ritik Mohadikar" />
+  <meta name="author" content="Ritik Mohadikar" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ritik Mohadikar | AWS Cloud Engineer" />
+  <meta property="og:description"
+    content="AWS Cloud Engineer with 4.5+ years experience in DevOps, cloud infrastructure, and automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpg" />
+  <meta property="og:url" content="https://ritikmohadikar.dev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ritik Mohadikar | AWS Cloud Engineer" />
+  <meta name="twitter:description"
+    content="AWS Cloud Engineer with 4.5+ years experience in DevOps, cloud infrastructure, and automation." />
+  <meta name="twitter:image" content="profile.jpg" />
+
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <p class="loader-text">Initializing Cloud...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Floating Social Sidebar -->
+  <aside class="social-sidebar" id="socialSidebar">
+    <a href="https://github.com/rutmoh18" target="_blank" aria-label="GitHub" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ritik-mohadikar-78a125234/" target="_blank" aria-label="LinkedIn"
+      class="social-icon">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="mailto:rutmoh18@gmail.com" aria-label="Email" class="social-icon">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <div class="sidebar-line"></div>
+  </aside>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">RM</span>
+        <span class="logo-dot"></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#achievements" class="nav-link">Awards</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="RITIK MOHADIKAR.pdf" download class="nav-btn">
+            <i class="fas fa-download"></i> Resume
+          </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <h1 class="hero-name">Ritik <span class="gradient-text">Mohadikar</span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-tagline">Building scalable, secure, and cost-efficient cloud infrastructure on AWS</p>
+        <div class="hero-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Nagpur, Maharashtra, India</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="RITIK MOHADIKAR.pdf" download class="btn btn-secondary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">4.5+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Teams</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-wrapper">
+          <div class="profile-glow"></div>
+          <div class="profile-ring"></div>
+          <div class="profile-img-container">
+            <img src="profile.jpg" alt="Ritik Mohadikar - AWS Cloud Engineer" class="profile-img" id="profileImg" />
+          </div>
+          <div class="profile-badge-aws">
+            <i class="fab fa-aws"></i> AWS Cloud Engineer
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-arrow"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text glass-card">
+          <h3>AWS Cloud Engineer & DevOps Enthusiast</h3>
+          <p>With 4.5+ years of hands-on experience, I specialize in designing and managing secure, scalable, and
+            cost-efficient cloud infrastructure on AWS. My expertise spans across multi-account environments, where I've
+            supported 30+ teams and optimized cloud spending by up to 25%.</p>
+          <p>I'm passionate about Infrastructure as Code, automation, and cloud-native architectures. I combine deep AWS
+            knowledge with DevOps practices to deliver reliable, high-performance systems.</p>
+          <div class="about-tags">
+            <span class="tag">☁️ AWS Architecture</span>
+            <span class="tag">🔧 DevOps & CI/CD</span>
+            <span class="tag">🛡️ Security & IAM</span>
+            <span class="tag">🤖 Automation</span>
+            <span class="tag">💰 Cost Optimization</span>
+            <span class="tag">🐳 Containers</span>
+          </div>
+        </div>
+        <div class="counters-grid">
+          <div class="counter-card glass-card">
+            <div class="counter-icon"><i class="fas fa-calendar-alt"></i></div>
+            <div class="counter-num" data-target="4" data-suffix="+">0</div>
+            <div class="counter-label">Years Experience</div>
+          </div>
+          <div class="counter-card glass-card">
+            <div class="counter-icon"><i class="fas fa-users"></i></div>
+            <div class="counter-num" data-target="30" data-suffix="+">0</div>
+            <div class="counter-label">Teams Supported</div>
+          </div>
+          <div class="counter-card glass-card">
+            <div class="counter-icon"><i class="fas fa-server"></i></div>
+            <div class="counter-num" data-target="40" data-suffix="+">0</div>
+            <div class="counter-label">EC2 Managed</div>
+          </div>
+          <div class="counter-card glass-card">
+            <div class="counter-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="counter-num" data-target="25" data-suffix="%">0</div>
+            <div class="counter-label">Cost Reduction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon aws-icon"><i class="fab fa-aws"></i></div>
+            <h3>AWS Services</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">EC2</span><span class="skill-tag">S3</span><span class="skill-tag">RDS</span>
+            <span class="skill-tag">Lambda</span><span class="skill-tag">IAM</span><span class="skill-tag">VPC</span>
+            <span class="skill-tag">ECS</span><span class="skill-tag">EKS</span><span class="skill-tag">Systems
+              Manager</span>
+            <span class="skill-tag">Load Balancer</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon net-icon"><i class="fas fa-globe"></i></div>
+            <h3>Content Delivery & DNS</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">API Gateway</span><span class="skill-tag">CloudFront</span>
+            <span class="skill-tag">Global Accelerator</span><span class="skill-tag">Route 53</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon iac-icon"><i class="fas fa-code"></i></div>
+            <h3>Infrastructure as Code</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Terraform</span><span class="skill-tag">CloudFormation</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Terraform</span><span>85%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>CloudFormation</span><span>80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon mon-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3>Monitoring & Logging</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">CloudWatch</span><span class="skill-tag">CloudTrail</span>
+            <span class="skill-tag">Config</span><span class="skill-tag">Security Hub</span>
+            <span class="skill-tag">Health Dashboard</span><span class="skill-tag">Trusted Advisor</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon dev-icon"><i class="fas fa-cogs"></i></div>
+            <h3>DevOps Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">CI/CD</span><span class="skill-tag">CodePipeline</span>
+            <span class="skill-tag">CodeBuild</span><span class="skill-tag">Jenkins</span><span
+              class="skill-tag">Ansible</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Jenkins</span><span>80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>CodePipeline</span><span>85%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon sec-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Security</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Inspector</span><span class="skill-tag">KMS</span>
+            <span class="skill-tag">Certificate Manager</span><span class="skill-tag">WAF &amp; Shield</span>
+            <span class="skill-tag">Security Groups</span><span class="skill-tag">GuardDuty</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon cont-icon"><i class="fab fa-docker"></i></div>
+            <h3>Containers</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Docker</span><span>85%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Kubernetes</span><span>75%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon scr-icon"><i class="fas fa-terminal"></i></div>
+            <h3>Scripting & Automation</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python Boto3</span><span class="skill-tag">Bash</span><span
+              class="skill-tag">Shell</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python Boto3</span><span>80%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Bash / Shell</span><span>75%</span></div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon git-icon"><i class="fab fa-git-alt"></i></div>
+            <h3>Version Control</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
+            <span class="skill-tag">GitHub Actions</span><span class="skill-tag">CodeCommit</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card">
+          <div class="project-num">01</div>
+          <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Auto-Scaling Web Infrastructure with ALB & EFS</h3>
+          <p>Designed and deployed a highly available web architecture using EC2, Auto Scaling, and Application Load
+            Balancer. Implemented shared storage using Amazon EFS for data consistency across instances. Configured
+            dynamic scaling policies and secured infrastructure with Security Groups, IAM roles, and private subnets.
+          </p>
+          <div class="project-tech">
+            <span>EC2</span><span>Auto Scaling</span><span>ALB</span><span>EFS</span>
+            <span>IAM</span><span>VPC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rutmoh18/Auto-Scaling-Web-Infrastructure-with-ALB-EFS-on-AWS" target="_blank"
+              class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-num">02</div>
+          <div class="project-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>AWS Two-Tier Architecture (Web + Database)</h3>
+          <p>Built a scalable two-tier architecture using EC2 (web layer) and RDS (database layer). Designed VPC with
+            public and private subnets, route tables, and NAT Gateway. Deployed ALB for traffic distribution. Configured
+            database in private subnet for enhanced security and implemented end-to-end deployment.</p>
+          <div class="project-tech">
+            <span>EC2</span><span>RDS</span><span>VPC</span><span>NAT Gateway</span>
+            <span>ALB</span><span>Route Tables</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rutmoh18/AWS-Two-Tier-Architecture-Project" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card glass-card featured-project">
+          <div class="project-num">03</div>
+          <div class="project-badge">✨ Featured</div>
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3>AWS AI Assistant</h3>
+          <p>Built an AI-powered AWS Assistant using Amazon Bedrock, Lambda, API Gateway, and S3 to automate cloud
+            resource management. Designed a serverless architecture with Bedrock Agents and Lambda Action Groups.
+            Implemented detection of unused resources, cost optimization, and a secure confirmation-based deletion
+            workflow. Chat-based frontend hosted on S3.</p>
+          <div class="project-tech">
+            <span>Bedrock</span><span>Lambda</span><span>API Gateway</span><span>S3</span>
+            <span>Serverless</span><span>AI/ML</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rutmoh18/Aws-AI-Assistant" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item active-job">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>AWS Cloud Engineer</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-building"></i> Tata Consultancy Services (TCS)
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-badge current">Current</span>
+                <span class="timeline-date"><i class="fas fa-calendar"></i> Jun 2023 – Present</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Managed multi-account AWS infrastructure (30+ teams) ensuring high availability & security</li>
+              <li>Deployed & optimized 40+ EC2 instances with EBS (performance + cost)</li>
+              <li>Designed secure VPC (Public/Private, NAT, VPN, Bastion)</li>
+              <li>Automated EC2/RDS scheduling via Lambda + EventBridge (↓25% cost)</li>
+              <li>Implemented IaC using Terraform & CloudFormation</li>
+              <li>Managed IAM, SSO & cross-account access (least privilege)</li>
+              <li>Setup monitoring & security using CloudWatch, CloudTrail, GuardDuty</li>
+              <li>Worked on Docker, Kubernetes & CI/CD (Jenkins, Git)</li>
+            </ul>
+            <div class="impact-grid">
+              <div class="impact-item">
+                <span class="impact-icon">🚀</span>
+                <span class="impact-num">99.99%</span>
+                <span class="impact-label">Uptime</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-icon">💰</span>
+                <span class="impact-num">25%</span>
+                <span class="impact-label">Cost Saved (~$20K/yr)</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-icon">⚡</span>
+                <span class="impact-num">60%</span>
+                <span class="impact-label">Faster Deployments</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Monitoring Engineer (L1)</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-building"></i> Tata Consultancy Services (TCS)
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar"></i> Jan 2022 – Jul 2023</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Monitored AWS/hybrid infrastructure using CloudWatch & scripting</li>
+              <li>Handled alerts, incidents & escalations (L2/L3 coordination)</li>
+              <li>Managed tickets & SLA tracking via JIRA</li>
+              <li>Performed health checks, log monitoring & reporting</li>
+              <li>Supported SSM maintenance & basic automation scripting</li>
+            </ul>
+            <div class="impact-grid">
+              <div class="impact-item">
+                <span class="impact-icon">✅</span>
+                <span class="impact-num">100%</span>
+                <span class="impact-label">SLA Compliance</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-icon">⏱️</span>
+                <span class="impact-num">30%</span>
+                <span class="impact-label">MTTA Reduction</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-icon">🤖</span>
+                <span class="impact-num">↑ Eff.</span>
+                <span class="impact-label">Via Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Verified expertise</span>
+        <h2 class="section-title">Certifi<span class="gradient-text">cations</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card">
+          <div class="cert-icon aws-cert"><i class="fab fa-aws"></i></div>
+          <h4>AWS Solutions Architect</h4>
+          <p class="cert-level">Associate</p>
+          <span class="cert-validity">2025 – 2028</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon aws-cert"><i class="fab fa-aws"></i></div>
+          <h4>AWS SysOps Administrator</h4>
+          <p class="cert-level">Associate</p>
+          <span class="cert-validity">2025 – 2028</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon aws-cert"><i class="fab fa-aws"></i></div>
+          <h4>AWS Developer</h4>
+          <p class="cert-level">Associate</p>
+          <span class="cert-validity">2025 – 2028</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon ai-cert"><i class="fas fa-brain"></i></div>
+          <h4>AWS AI Practitioner</h4>
+          <p class="cert-level">Certified</p>
+          <span class="cert-validity">2024 – 2027</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon cloud-cert"><i class="fas fa-cloud"></i></div>
+          <h4>AWS Cloud Practitioner</h4>
+          <p class="cert-level">Certified</p>
+          <span class="cert-validity">2023 – 2026</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon azure-cert"><i class="fab fa-microsoft"></i></div>
+          <h4>Azure Administrator</h4>
+          <p class="cert-level">Associate (AZ-104)</p>
+          <span class="cert-validity">2023 – 2026</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon git-cert"><i class="fab fa-github"></i></div>
+          <h4>GitHub Foundations</h4>
+          <p class="cert-level">Certified</p>
+          <span class="cert-validity">2025 – 2028</span>
+        </div>
+      </div>
+      <div class="credly-links">
+        <p>🏅 View my verified badges on Credly:</p>
+        <div class="credly-btns">
+          <a href="https://www.credly.com/users/ritik-mohadikar/badges#credly" target="_blank" class="credly-btn">
+            <i class="fas fa-medal"></i> Credly Profile 1
+          </a>
+          <a href="https://www.credly.com/users/ritik-mohadikar.2ac1987c/badges#credly" target="_blank"
+            class="credly-btn">
+            <i class="fas fa-medal"></i> Credly Profile 2
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS SECTION ===== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition & Awards</span>
+        <h2 class="section-title">Achieve<span class="gradient-text">ments</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card">
+          <div class="ach-icon">🏆</div>
+          <h4>Xcelerate Award – TCS</h4>
+          <p>Secured 5th rank among 50 employees for outstanding performance and AWS training completion.</p>
+        </div>
+        <div class="achievement-card glass-card">
+          <div class="ach-icon">♟️</div>
+          <h4>Chess Tournament Organizer</h4>
+          <p>Organized 3 internal chess tournaments at TCS, promoting team collaboration and engagement across the
+            organization.</p>
+        </div>
+        <div class="achievement-card glass-card">
+          <div class="ach-icon">🥇</div>
+          <h4>Winner – VASE IT Cup (Chess)</h4>
+          <p>Won the VASE IT Cup and 3 internal chess awards, showcasing strong analytical and strategic thinking
+            skills.</p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="education-box glass-card">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-content">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <div class="edu-institution">
+            <i class="fas fa-university"></i> Kamla Nehru Mahavidyalaya, RTMNU, Nagpur, Maharashtra
+          </div>
+          <div class="edu-meta">
+            <span><i class="fas fa-star"></i> 62.30%</span>
+            <span><i class="fas fa-calendar"></i> Jun 2017 – Nov 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info glass-card">
+          <h3>Let's Work Together</h3>
+          <p>I'm always open to discussing new opportunities, AWS architecture challenges, or just talking cloud tech.
+            Feel free to reach out!</p>
+          <div class="contact-details">
+            <a href="mailto:rutmoh18@gmail.com" class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-detail-label">Email</span>
+                <span class="contact-detail-value">rutmoh18@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919657497250" class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-detail-label">Phone</span>
+                <span class="contact-detail-value">+91-9657497250</span>
+              </div>
+            </a>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-value">Nagpur, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/rutmoh18" target="_blank" class="social-btn github-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ritik-mohadikar-78a125234/" target="_blank"
+              class="social-btn linkedin-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://www.naukri.com/mnjuser/profile" target="_blank" class="social-btn naukri-btn">
+              <i class="fas fa-briefcase"></i> Naukri
+            </a>
+            <a href="https://www.credly.com/users/ritik-mohadikar/badges#credly" target="_blank"
+              class="social-btn credly-btn">
+              <i class="fas fa-medal"></i> Credly 1
+            </a>
+            <a href="https://www.credly.com/users/ritik-mohadikar.2ac1987c/badges#credly" target="_blank"
+              class="social-btn credly-btn">
+              <i class="fas fa-medal"></i> Credly 2
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap glass-card">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag input-icon"></i>
+                <input type="text" id="subject" name="subject" placeholder="AWS Architecture Discussion" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment-alt input-icon"></i>
+                <textarea id="message" name="message" rows="5"
+                  placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary form-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="formMsg" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">RM</span>
+        <span class="logo-dot"></span>
+      </div>
+      <p class="footer-text">Designed & Built by <span class="gradient-text">Ritik Mohadikar</span> &copy; 2024</p>
+      <p class="footer-sub">AWS Cloud Engineer · Nagpur, India</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
